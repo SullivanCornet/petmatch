@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+.logo{
+   position:absolute;
+}
+
+body{
+
+   font-family: 'tw cen Mt', sans-serif;
+   color:rgb(218, 143, 143);
+   background: linear-gradient(309deg, #bb9cce, #c9a2b4, #9e796f, #4d4948);
+   background-size: 800% 800%;
+
+   -webkit-animation: AnimationName 15s ease infinite;
+   -moz-animation: AnimationName 15s ease infinite;
+   -o-animation: AnimationName 15s ease infinite;
+   animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+   0%{background-position:24% 0%}
+   50%{background-position:77% 100%}
+   100%{background-position:24% 0%}
+}
+@-moz-keyframes AnimationName {
+   0%{background-position:24% 0%}
+   50%{background-position:77% 100%}
+   100%{background-position:24% 0%}
+}
+@-o-keyframes AnimationName {
+   0%{background-position:24% 0%}
+   50%{background-position:77% 100%}
+   100%{background-position:24% 0%}
+}
+@keyframes AnimationName {
+   0%{background-position:24% 0%}
+   50%{background-position:77% 100%}
+   100%{background-position:24% 0%}
+}
+   
+ 
+    
+    
+  
+
+form{
+   max-width: 300px;
+   margin: 10px auto;
+   padding:10px 20px;
+   background:linear-gradient(180deg, #323134 0%, #A9FBC9 100%);
+   ;
+
+}
+
+h1{margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.number{
+   background-color:rgb(209, 140, 140);
+   ;
+   color:#fff;
+   height: 30px;
+   width: 30px;
+   display: inline-block;
+   font-size: 0.8em;
+   margin-right: 4px;
+   line-height: 30px;
+   text-align: center;
+   border-radius: 50%;
+}
+
+fieldset{ 
+   border: none;
+   margin-bottom: 30px;
+}
+
+legend{
+   font-size: 1.4em;
+   margin-bottom: 10px;
+}
+
+label{
+   display: block;
+   margin-bottom: 8px;
+}
+
+label.light{
+    display: inline;    
+}
+
+input:not([type='checkbox'], [type='radio'])
+textarea,
+select {
+   border: none;
+   outline: none;
+   font-size: 16px;
+   height: auto;
+   width: 100px;
+   padding: 15px;
+   margin:0%;
+   margin-bottom: 30px;
+   background-color: rgba(255, 164, 0, 0.1);
+
+}  
+
+input[type='checkbox'], input [type='radio']{
+    margin: 0 4px 8px 0;
+}
+
+button{
+    padding: 15px 30px;
+    color:linear-gradient(90deg, rgba(184, 158, 158, 0.62) 0%, rgba(172, 84, 84, 0.62) 100%);
+    background-color:rgba(235, 198, 198, 1);
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid transparent;
+    border-color: rgba(235, 198, 198, 1);
+    box-shadow: 1px 1px 3px rgba(172, 84, 84, 0.62);
+    margin-bottom: 10px;
+    transition: 0,3sS;
+
+}
+
+button:hover{
+    background-color:rgb(213, 139, 139);
+    color: rgb(213, 139, 139);
+    box-shadow: 1px 1px 3px rgb(231, 157, 157);
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+    <link href="style2.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<title>PetMatchou</title>
+    </head>
+<!--WIDGET-->
+<body>
+    
+        <div class="barretop">
+            <nav>
+              <a href="index.html" id="logo"> <img src="images/logo.jpg" /></a>
+              <ul >
+                
+                <li><a href="Membres.html">Gallerie</a></li>
+                
+                <li><button  class=" btn toggle-btn" id="displayForm" onclick ="show()" >se connecter</button></li>
+              </ul>
+            </nav>
+        </div>
+      
+ 
+
+
+<!-- banniere-->
+ <main>   
+    <section>
+        
+        <div class="sec-container">
+           
+            <div class="form-wrapper ">
+               
+            <div class="card, show"> <a href="index.html" id="logo"> <img src="images/logo.jpg" /></a>
+                <div class="card-header">
+                   
+                    <div id="forLogin" class="form-header">se connecter</div>
+                 
+                    </div>
+                    <div class="card-body" id="formContainer">
+                        <form id="loginForm">
+                            <h4>Email</h4>
+                            <input type="text" class="form-control" placeholder="@utilisateur"/>
+                            <h4>Mot de passe</h4>
+                            <input type="password" class="form-control" placeholder="mot de passe"/>
+                            <button class="formButton">connexion</button>
+                            <a href="Inscription.html">Mot de passe oublié?</a>
+                            <p>pas encore de compte?</p><a href="Inscription.html">s'inscrire</a>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        
+    </section>
+    <div class="titre">
+       
+         <h3 class="pet">PET</h3> 
+         <h2 class="match">MATCH</H2>
+         <div class="coeur"><img src="images/love.png" alt="">
+     <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.91/build/spline-viewer.js"></script>
+        <spline-viewer hint loading-anim-type="spinner-small-dark" url="https://prod.spline.design/hHiofccAXk9ApSi8/scene.splinecode"></spline-viewer>-->
+        </div>
+     
+    </div>
+   
+</main>
+
+
+<div id="loremipsum">
+    <p> Lorem ipsum dolor sit amet,consect adipis elit, sed do eiusmod tempor incididunt ut labore et dolore... <br>
+    Distinctio totam at esse.Nobis sint magnam velit neque tenetur explicabo harum  Corrupti!</p>
+</div> 
+
+<footer>
+
+    <p>............</p>
+   </footer>
+
+
+<script>
+    const displayform= document.getElementById('displayForm');
+    
+    const forLogin = _('forLogin');
+    const loginForm = _('loginForm');
+    
+    const formContainer = _('formContainer');
+    displayform.addEventListener('click', showForm);
+
+
+
+    function _(e) {
+        return document.getElementById(e);
+    }
+
+    function showForm() {
+
+        document.querySelector('.form-wrapper ').classList.toggle('show')
+       
+        
+
+
+    }
+  
+</script>
+ </body>
+</html>
